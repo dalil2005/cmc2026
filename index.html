@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMC - Club des Métiers de la Construction | University of Constantine 3</title>
+    <meta name="description" content="CMC is the architecture and construction club at University of Constantine 3, Algeria. We organize events, workshops, and networking sessions for students and professionals.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Fjalla+One&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta property="og:title" content="CMC Scientific Club of Architecture" />
+<meta property="og:description" content="Discover events, workshops, and projects from the CMC Scientific Club at Constantine 3 University." />
+<meta property="og:image" content="https://scontent.faae2-4.fna.fbcdn.net/v/t39.30808-1/464625457_122099400992598549_1393831010944308346_n.jpg?stp=dst-jpg_s200x200_tt6&_nc_cat=100&ccb=1-7&_nc_sid=1d2534&_nc_ohc=ogk0GXj_CIIQ7kNvwHVPi5b&_nc_oc=Adn7i9KiGz9JTsCUrz2ayFXqmMBCuCdLIQnMe4AokrX46W4sBdb0UuZeUcvyrWP2Onw&_nc_zt=24&_nc_ht=scontent.faae2-4.fna&_nc_gid=bVJJuvL7oQgRCDOEE71Hlg&oh=00_AfR5Je57W7FsGRtlWX5N9glQU8Pl3JdnuPTrrFQevyALRw&oe=687837B9" />
+<meta property="og:url" content="https://yourdomain.com" />
+<meta property="og:type" content="website" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#FFD700",
+                        secondary: "#333333",
+                        accent: "#FFA500"
+                    },
+                    fontFamily: {
+                        heading: ['Fjalla One', 'sans-serif'],
+                        body: ['Montserrat', 'sans-serif']
+                    },
+                    animation: {
+                        'fade-in': 'fadeIn 1s ease-in-out',
+                        'slide-up': 'slideUp 0.5s ease-out'
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' }
+                        },
+                        slideUp: {
+                            '0%': { transform: 'translateY(20px)', opacity: '0' },
+                            '100%': { transform: 'translateY(0)', opacity: '1' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .arch-shape {
+            clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+        }
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+    </style>
+</head>
+<body class="font-body bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <img src="Layer 1cmc.png" alt="CMC Logo" style="width: 40px; height: auto;">
+
+                    <span class="font-heading text-xl font-bold">CMC</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#about" class="font-medium hover:text-primary transition">About</a>
+                    <a href="#events" class="font-medium hover:text-primary transition">Events</a>
+                    <a href="#gallery" class="font-medium hover:text-primary transition">Gallery</a>
+                    <a href="#join" class="font-medium hover:text-primary transition">Join Us</a>
+                    <a href="#contact" class="font-medium hover:text-primary transition">Contact</a>
+                </div>
+                <button class="md:hidden focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-gray-900 text-white arch-shape h-96 md:h-screen/2 overflow-hidden">
+        <img src="https://picsum.photos/1920/1080?random=1&grayscale" alt="Architectural design background" class="absolute inset-0 w-full h-full object-cover opacity-50">
+        <div class="absolute inset-0 bg-gradient-to-r from-gray-900 to-transparent"></div>
+        <div class="container mx-auto px-6 h-full flex items-center relative z-10">
+            <div class="max-w-2xl animate-fade-in">
+                <h1 class="font-heading text-4xl md:text-6xl font-bold mb-4">Shaping the Future of Architecture at Constantine 3</h1>
+                <p class="text-xl md:text-2xl mb-8">Connecting students and professionals in architecture and construction</p>
+                <a href="#join" class="bg-primary hover:bg-accent text-gray-900 font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Join Our Community</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">About CMC</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="animate-slide-up">
+                    <h3 class="font-heading text-2xl font-bold mb-4">Our Mission</h3>
+                    <p class="mb-6 text-gray-700">The Club des Métiers de la Construction (CMC) at University of Constantine 3 is a platform for architecture and construction students to develop their skills, network with professionals, and contribute to the built environment of Algeria.</p>
+                    <p class="mb-6 text-gray-700">We organize workshops, site visits, competitions, and networking events to bridge the gap between academic knowledge and professional practice.</p>
+                    <div class="flex space-x-4">
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-users text-primary text-2xl mb-2"></i>
+                            <h4 class="font-bold">20+ Members</h4>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                            <i class="fas fa-calendar-alt text-primary text-2xl mb-2"></i>
+                            <h4 class="font-bold">20+ Events Yearly</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="rounded-xl overflow-hidden shadow-xl hover:scale-105 transition-transform duration-300">
+    <video 
+        src="v3.mp4" 
+        class="w-full h-auto" 
+        controls 
+        preload="none" 
+        loop 
+        autoplay 
+        muted
+    >
+        Your browser does not support the video tag.
+    </video>
+</div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Upcoming Events & Workshops</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Event 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-scale transition duration-300">
+                    <img src="481004442_17865047775338492_96400995748781731_n.jpg" alt="Architectural workshop" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="bg-primary bg-opacity-20 text-primary text-sm font-bold px-3 py-1 rounded-full">Touenament</span>
+                            <span class="text-gray-500 text-sm">23/02/2025 at 2:00PM</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">CMC football tournament</h3>
+                        <p class="text-gray-700 mb-4">we get some fun toghethrs</p>
+                        <a href="#" class="text-primary font-bold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Event 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-scale transition duration-300">
+                    <img src="469301638_1140903944037670_6445548216496907239_n.jpg" alt="Construction site visit" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="bg-primary bg-opacity-20 text-primary text-sm font-bold px-3 py-1 rounded-full">Touenament</span>
+                            <span class="text-gray-500 text-sm">09/09/2024 at 9:30PM</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">CHESS touenament</h3>
+                        <p class="text-gray-700 mb-4">places limited!!</p>
+                        <a href="#" class="text-primary font-bold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+                
+                <!-- Event 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md hover-scale transition duration-300">
+                    <img src="ff.jpg" alt="Networking event" class="w-full h-48 object-cover" loading="lazy">
+                    <div class="p-6">
+                        <div class="flex justify-between items-center mb-2">
+                            <span class="bg-primary bg-opacity-20 text-primary text-sm font-bold px-3 py-1 rounded-full">Networking</span>
+                            <span class="text-gray-500 text-sm">09/09/2024</span>
+                        </div>
+                        <h3 class="font-heading text-xl font-bold mb-2">CMC OPENING DAY</h3>
+                        <p class="text-gray-700 mb-4">JOIN US !!</p>
+                        <a href="#" class="text-primary font-bold hover:underline">Learn More →</a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12">
+                <a href="#" class="inline-block border-2 border-primary text-primary font-bold py-2 px-6 rounded-lg hover:bg-primary hover:text-white transition duration-300">View All Events</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Past Highlights</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="overflow-hidden rounded-lg hover-scale">
+                    <img src="https://scontent.faae2-4.fna.fbcdn.net/v/t39.30808-6/469584801_122114686448598549_1741065662154578456_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=127cfc&_nc_ohc=7jcsqk3ehvQQ7kNvwFcFrpY&_nc_oc=AdmSD6d7az5SxOIamRh6Kxk04zWqCqAdA_WXCnp6d96dDXiyJZsNzZhIvtZNSk6UhbE&_nc_zt=23&_nc_ht=scontent.faae2-4.fna&_nc_gid=mwhBJfdGO8SXsimVmr0oTA&oh=00_AfQgscmEyHPyndZErQfRnKbS66i9u_s8VTrgFj6d7r1Ysw&oe=68773A84" alt="Workshop photo" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="overflow-hidden rounded-lg hover-scale">
+                    <img src="https://scontent.faae2-4.fna.fbcdn.net/v/t39.30808-6/469959452_122114686418598549_1501559515982856414_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_ohc=BBg2yqbeGkEQ7kNvwGap-W4&_nc_oc=AdnSEh49fruCqeF4ZrVFJ3XtJjgXzCrVwl83PyWGVWnmXHVNuytBaXVE5wxwTqsHl2Q&_nc_zt=23&_nc_ht=scontent.faae2-4.fna&_nc_gid=sTAFogjIZwvxzhLxhb6kCw&oh=00_AfTxNOb9H3RGh4pgNcbG0-Lg7ZJvLF3-_P1Ei6PpB70qNg&oe=68772F17" alt="Guest lecture" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="overflow-hidden rounded-lg hover-scale">
+                    <img src="https://scontent.faae2-3.fna.fbcdn.net/v/t39.30808-6/469808706_122114686430598549_1871765782404730032_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=aveHl2CNV9kQ7kNvwEShO62&_nc_oc=Adl2KIDQHcOcOa7YnKy_o-t8xu5CRSTjg71vqUbkJ_MXH0VCDnv5-44pL4KSTDxiaas&_nc_zt=23&_nc_ht=scontent.faae2-3.fna&_nc_gid=djvpMpVd3T6s43g7l-nMYg&oh=00_AfTWTNWXhTFrhVj78tboyXhVe8tRNr8gMW59jtSWg9bfWw&oe=68773B87" alt="Site visit" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                <div class="overflow-hidden rounded-lg hover-scale">
+                    <img src="https://scontent.faae2-3.fna.fbcdn.net/v/t39.30808-6/469818650_122114686442598549_644592274816442418_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=127cfc&_nc_ohc=w-T6W-cQAMQQ7kNvwGru2qX&_nc_oc=AdlWQkDYO9M4W1hc7CCuH8gmJ45IUSxS1kXI7-tbIbxUI_ZEv5k3anbeZRAJYsfPuLo&_nc_zt=23&_nc_ht=scontent.faae2-3.fna&_nc_gid=iBu5MNRt7PP4ZwQXVEpH3g&oh=00_AfShMNvhbEQ9m-iZ0UmNA5xDyUhBujxbbxcCd5304duKGQ&oe=68773AFE" alt="Group project" class="w-full h-full object-cover" loading="lazy">
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Section -->
+    <section id="join" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Join Our Community</h2>
+                <div class="w-20 h-1 bg-white mx-auto"></div>
+            </div>
+            <div class="max-w-3xl mx-auto bg-white text-gray-800 rounded-xl shadow-xl p-8 md:p-12">
+                <h3 class="font-heading text-2xl font-bold mb-6">Become a CMC Member</h3>
+                <form class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Full Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="study" class="block text-gray-700 font-medium mb-2">Field of Study</label>
+                        <select id="study" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                            <option value="">Select your field</option>
+                            <option value="architecture">Architecture</option>
+                            <option value="civil-engineering">Civil Engineering</option>
+                            <option value="urban-planning">Urban Planning</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-700 font-medium mb-2">Why do you want to join CMC?</label>
+                        <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300">Submit Application</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="py-16 bg-gray-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Our Partners</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center">
+                <div class="flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <img src="https://www.algerie-eco.com/wp-content/uploads/2017/07/groupe-industriel-des-ciments-dalgerie.jpg" alt="University of Constantine 3" class="h-12 object-contain">
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <div class="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.A6F_tiBKTUjt6MOPzB-AEAHaF7?rs=1&pid=ImgDetMain&o=7&rm=3" alt="Algerian Architects Association" class="h-12 object-contain">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="font-heading text-3xl md:text-4xl font-bold mb-4">Contact Us</h2>
+                <div class="w-20 h-1 bg-primary mx-auto"></div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="font-heading text-2xl font-bold mb-6">Get In Touch</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Location</h4>
+                                <p class="text-gray-700">Faculty of Architecture, University of Constantine 3, Algeria</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Email</h4>
+                                <p class="text-gray-700">contact@cmc-constantine.dz</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <div class="bg-primary bg-opacity-10 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-1">Phone</h4>
+                                <p class="text-gray-700">+213 XXX XXX XXX</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Follow Us</h4>
+                        <div class="flex space-x-4">
+                            <a href="https://www.facebook.com/profile.php?id=61567956483744&mibextid=ZbWKwL" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/cmc.uc3/" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            
+                            <a href="https://www.tiktok.com/@cmc.uc3?_t=8r2f1PNlbin&_r=1&fbclid=PAZXh0bgNhZW0CMTEAAafHz1OJ3tVN80gMIrBUmSAa8G7V-6v90KNERIyvm7R--dlrtmNcHGYmCa2iRQ_aem_LjCz9refq4I6MkHHByxK4w" class="bg-gray-100 hover:bg-primary hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="font-heading text-2xl font-bold mb-6">Send Us a Message</h3>
+                    <form class="space-y-6">
+                        <div>
+                            <label for="contact-name" class="block text-gray-700 font-medium mb-2">Name</label>
+                            <input type="text" id="contact-name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="contact-email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="contact-email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="contact-subject" class="block text-gray-700 font-medium mb-2">Subject</label>
+                            <input type="text" id="contact-subject" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary">
+                        </div>
+                        <div>
+                            <label for="contact-message" class="block text-gray-700 font-medium mb-2">Message</label>
+                            <textarea id="contact-message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-secondary text-white font-bold py-3 px-6 rounded-lg transition duration-300">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                               <img src="Layer 1cmc.png" alt="CMC Logo" style="width: 40px; height: auto;">
+
+                        <span class="font-heading text-xl font-bold">CMC</span>
+                    </div>
+                    <p class="text-gray-300">Club des Métiers de la Construction at University of Constantine 3, Algeria.</p>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#about" class="text-gray-300 hover:text-primary transition">About</a></li>
+                        <li><a href="#events" class="text-gray-300 hover:text-primary transition">Events</a></li>
+                        <li><a href="#gallery" class="text-gray-300 hover:text-primary transition">Gallery</a></li>
+                        <li><a href="#join" class="text-gray-300 hover:text-primary transition">Join Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Blog</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Projects</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">Members Directory</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-primary transition">FAQ</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-heading text-lg font-bold mb-4">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Subscribe to our newsletter for updates on events and workshops.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-800 w-full">
+                        <button type="submit" class="bg-primary hover:bg-accent text-white px-4 py-2 rounded-r-lg transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Club des Métiers de la Construction. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('button[aria-label="Mobile menu"]');
+            const mobileMenu = document.querySelector('#mobile-menu');
+            
+            mobileMenuButton.addEventListener('click', function() {
+                mobileMenu.classList.toggle('hidden');
+            });
+            
+            // Smooth scrolling for anchor links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
